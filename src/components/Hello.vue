@@ -1,10 +1,12 @@
 <template lang="html">
+<div id="app">
   <div class="greeting">
     <h2>
       Wellcome to the Vue.js blog
     </h2>
     <img src="../assets/logo.png" alt="vuejs logo">
   </div>
+</div>
 </template>
 
 <style lang="scss">
