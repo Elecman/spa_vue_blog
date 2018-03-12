@@ -1,20 +1,24 @@
 <template lang="html">
   <div class="user" v-if="user">
-    <p class="post__id">{{ user.id }}</p>
-    <p class="post__id">{{ user.name }}</p>
-    <p class="post__id">{{ user.username }}</p>
-    <p class="post__id">{{ user.email }}</p>
-    <p class="post__id">{{ user.address.street }}</p>
-    <p class="post__id">{{ user.address.suite }}</p>
-    <p class="post__id">{{ user.address.city }}</p>
-    <p class="post__id">{{ user.address.zipcode }}</p>
-    <p class="post__id">{{ user.address.geo.lat }}</p>
-    <p class="post__id">{{ user.address.geo.lng }}</p>
-    <p class="post__id">{{ user.phone }}</p>
-    <p class="post__id">{{ user.website }}</p>
-    <p class="post__id">{{ user.company.name }}</p>
-    <p class="post__id">{{ user.company.catchPhrase }}</p>
-    <p class="post__id">{{ user.company.bs }}</p>
+    <table class="table">
+		<tr>
+			<td>{{ user.id }}</td>
+			<td>{{ user.name }}</td>
+			<td>{{ user.username }}</td>
+			<td>{{ user.email }}</td>
+			<td>{{ user.address.street }}</td>
+			<td>{{ user.address.suite }}</td>
+			<td>{{ user.address.city }}</td>
+			<td>{{ user.address.zipcode }}</td>
+			<td>{{ user.address.geo.lat }}</td>
+			<td>{{ user.address.geo.lng }}</td>
+			<td>{{ user.phone }}</td>
+			<td>{{ user.website }}</td>
+			<td>{{ user.company.name }}</td>
+			<td>{{ user.company.catchPhrase }}</td>
+			<td>{{ user.company.bs }}</td>
+		</tr>
+	</table>
   </div>
 </template>
 

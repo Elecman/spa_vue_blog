@@ -1,11 +1,13 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-import App from './App.vue'
-import Hello from './components/Hello.vue'
-import News from './components/News/News.vue'
-import Post from './components/News/Post.vue'
+import Vue 		from 'vue'
+import Router 	from 'vue-router'
+import App 		from './App.vue'
+import Hello 	from './components/Hello.vue'
+import News 	from './components/News/News.vue'
+import Post 	from './components/News/Post.vue'
+import Comments	from './components/News/Comments.vue'
 import AllUsers from './components/User/AllUsers.vue'
-import User from './components/User/User.vue'
+import User 	from './components/User/User.vue'
+
 
 
 Vue.use(Router)
@@ -32,7 +34,6 @@ const router = new Router ({
 			path: '/users/',
 			name: 'users',
 			component: AllUsers,
-			props: true,
 		},
 		{
 			path: '/user/:id',
@@ -40,13 +41,11 @@ const router = new Router ({
 			component: User,
 			props: true,
 		},
-	
-		/*{
-			path: '/user/:id',
-			name: 'user',
-			component: UserProfile,
-			props: true,
-		},*/
+		{
+			path: '/comments/',
+			name: 'comments',
+			component: Comments,
+		},
 	]
 })
 

@@ -9,6 +9,10 @@
 </div>
 </template>
 
+<script>
+
+</script>
+
 <style lang="scss">
   .greeting {
     display: flex;
